@@ -14,7 +14,7 @@ export default function Home() {
         width="640"
         height="360"
         controls
-        src="/api/video?name=video-1.mp4"
+        src="/api/video?name=video-01.mp4"
       />
 
       <br/><br/><br/>
@@ -24,7 +24,7 @@ export default function Home() {
         width="640"
         height="360"
         controls
-        src="/api/video?name=video-2.mp4"
+        src="/api/video?name=video-02.mp4"
       />
     </main>
   )

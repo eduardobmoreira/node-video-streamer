@@ -1,11 +1,11 @@
 import fs from 'fs'
 import path from 'path'
 
-const VALID_VIDEOS = ['video-1.mp4', 'video-2.mp4'];
+const VALID_VIDEOS = ['video-01.mp4', 'video-02.mp4'];
 
 export async function GET(req){
     const { searchParams } = new URL(req.url)
-    const videoName = searchParams.get('name') || 'video-1.mp4'
+    const videoName = searchParams.get('name') || 'video-01.mp4'
 
     if(!VALID_VIDEOS.includes(videoName)){
         return new Response('Invalid video name', {status: 400})
